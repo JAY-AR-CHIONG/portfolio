@@ -65,7 +65,7 @@ export function Navbar() {
           onClick={() => goToSection("home")}
           className="font-mono text-lg font-bold tracking-tight text-text"
         >
-          JAY-AR<span className="text-accent">.</span>
+          JAY-AR<span className="text-accent">{" >_<"}</span>
         </button>
 
         <nav className="hidden items-center gap-1 lg:flex">
