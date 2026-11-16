@@ -84,6 +84,6 @@ export interface Project {
   mockupType: "browser" | "mobile" | "desktop"
   accentFrom: string
   accentTo: string
-  gallery: { label: string }[]
+  gallery: { label: string; image?: string }[]
   status: string
 }

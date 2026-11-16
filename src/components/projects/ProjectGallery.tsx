@@ -54,7 +54,7 @@ export function ProjectGallery({ project }: { project: Project }) {
             transition={{ duration: 0.25 }}
             className="h-full w-full"
           >
-            <ProjectMockup project={project} label={images[active]?.label} />
+            <ProjectMockup project={project} label={images[active]?.label} image={images[active]?.image} />
           </motion.div>
         </AnimatePresence>
 
@@ -119,7 +119,7 @@ export function ProjectGallery({ project }: { project: Project }) {
               onClick={(e) => e.stopPropagation()}
               className="aspect-video w-full max-w-4xl overflow-hidden rounded-2xl"
             >
-              <ProjectMockup project={project} label={images[active]?.label} />
+              <ProjectMockup project={project} label={images[active]?.label} image={images[active]?.image} />
             </motion.div>
             {images.length > 1 && (
               <>

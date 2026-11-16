@@ -16,7 +16,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
     >
       <Link to={`/projects/${project.slug}`} className="block aspect-[16/10] overflow-hidden bg-bg-secondary">
         <div className="h-full w-full transition-transform duration-500 group-hover:scale-[1.03]">
-          <ProjectMockup project={project} />
+          <ProjectMockup project={project} label={project.gallery[0]?.label} image={project.gallery[0]?.image} />
         </div>
       </Link>
 

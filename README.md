@@ -61,12 +61,15 @@ npm run build
 
 ## Setup checklist — what to do before going fully live
 
-- [ ] **Project screenshots.** Every project card and detail page currently shows a clearly
-      labeled gradient placeholder ("Screenshot placeholder") instead of a real screenshot,
-      because the underlying systems require Laravel/MySQL/Supabase or Flutter environments
-      that weren't set up in this session. Replace `ProjectMockup`'s placeholder with real
-      images (drop files into `public/images/projects/<project>/` and reference them from
-      `src/data/projects.ts`'s `gallery` field) once you can capture them.
+- [x] **Project screenshots.** Real screenshots are now wired in for 4 of 6 projects — RGC Debt
+      Management, Vehicle Maintenance System, RGC Inventory and Buying System, and ESS Error
+      Registry — each captured from an isolated demo/seeded instance so no real customer, debt,
+      or production data is shown. `ProjectMockup` renders the real image when a gallery entry
+      has one, falling back to the gradient placeholder otherwise.
+      - [ ] Lantaka Room and Event Reservation System and AI vs. Human-Created Landscape
+            Classification still show placeholders — add images to
+            `public/images/projects/<project>/` and reference them from that project's
+            `gallery` field in `src/data/projects.ts` once available.
 - [ ] **Profile photo.** The hero and about sections currently show a "JRC" monogram instead of
       a real photo. Add `public/images/profile/photo.jpg` and swap it into `src/sections/Hero.tsx`
       and `src/sections/About.tsx`.
