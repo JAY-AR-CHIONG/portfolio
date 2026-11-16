@@ -5,9 +5,9 @@ export const projects: Project[] = [
     slug: "rgc-debt-management",
     title: "RGC Debt Management System",
     shortDescription:
-      "A web-based debt management platform with debtor tracking, payment monitoring, receipts, approvals, and financial reporting.",
+      "A responsive web-based debt management platform — usable on desktop and mobile — with debtor tracking, payment monitoring, receipts, approvals, and financial reporting.",
     overview:
-      "RGC Trading needed to replace a paper-and-spreadsheet process for tracking customer debt with something searchable, auditable, and accessible to multiple branch staff at once. The system centralizes debtor profiles, debt records, and payments, and enforces an approval workflow so no single user can create and approve their own transaction.",
+      "RGC Trading needed to replace a paper-and-spreadsheet process for tracking customer debt with something searchable, auditable, and accessible to multiple branch staff at once, whether they're at a desktop or on a phone. The system centralizes debtor profiles, debt records, and payments, and enforces an approval workflow so no single user can create and approve their own transaction.",
     role: "Full-Stack Developer",
     roleType: "Commissioned Project",
     period: "Aug 2026 – Nov 2026",
@@ -90,6 +90,8 @@ export const projects: Project[] = [
       { label: "Debtor profile", image: "/images/projects/rgc-debt-management/debtor-profile.jpg" },
       { label: "Payment approval queue", image: "/images/projects/rgc-debt-management/payment-approvals.jpg" },
       { label: "Report & PDF export", image: "/images/projects/rgc-debt-management/report.jpg" },
+      { label: "Mobile dashboard", image: "/images/projects/rgc-debt-management/mobile-dashboard.png" },
+      { label: "Mobile debt list", image: "/images/projects/rgc-debt-management/mobile-debts.png" },
     ],
     status: "Feature-complete — 53 automated tests passing",
   },

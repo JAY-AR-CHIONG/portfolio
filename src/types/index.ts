@@ -87,3 +87,12 @@ export interface Project {
   gallery: { label: string; image?: string }[]
   status: string
 }
+
+export interface HobbyItem {
+  id: string
+  type: "photo" | "video"
+  caption: string
+  accentFrom: string
+  accentTo: string
+  src?: string
+}

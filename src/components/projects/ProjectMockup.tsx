@@ -33,7 +33,11 @@ function PlaceholderNotice({ label }: { label?: string }) {
 }
 
 function Screenshot({ src, label }: { src: string; label?: string }) {
-  return <img src={src} alt={label ?? "Screenshot"} className="h-full w-full object-cover object-top" />
+  return (
+    <div className="flex h-full w-full items-center justify-center bg-[#1c1c22]">
+      <img src={src} alt={label ?? "Screenshot"} className="h-full w-full object-contain" />
+    </div>
+  )
 }
 
 export function ProjectMockup({

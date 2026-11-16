@@ -6,6 +6,7 @@ import { Skills } from "@/sections/Skills"
 import { Experience } from "@/sections/Experience"
 import { Projects } from "@/sections/Projects"
 import { Education } from "@/sections/Education"
+import { Hobbies } from "@/sections/Hobbies"
 import { Contact } from "@/sections/Contact"
 
 export function Home() {
@@ -29,6 +30,7 @@ export function Home() {
       <Experience />
       <Projects />
       <Education />
+      <Hobbies />
       <Contact />
     </>
   )
